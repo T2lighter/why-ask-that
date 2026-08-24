@@ -50,6 +50,8 @@ description: 使用本 skill 的时机：用户关注的对象是 remeet-me 自�
 
 ## 输出（仅完整分析落盘）
 
+**🔴 CHECKPOINT（落盘前必停）：完整分析会新建 2 个文件、更新 index.md——写之前先向用户报清单（主档与 html 的文件名、index.md 将追加的原则条目），用户点头再动笔。index.md 是跨周期累积的原则库，宁慢勿污。快速分析不落盘，无此步。**
+
 ### md 主档：`remeet-me/why-ask-that/日期-主题-analysis.md`
 
 ```markdown
