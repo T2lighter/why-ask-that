@@ -5,7 +5,7 @@
 <p align="center">
   <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
   &nbsp;
-  <img src="https://img.shields.io/badge/platform-Claude_Code-7c3aed.svg" alt="Platform">
+  <img src="https://img.shields.io/badge/runtime-Multi--Runtime-7c3aed.svg" alt="Multi-Runtime">
   &nbsp;
   <img src="https://img.shields.io/badge/lang-中文-22c55e.svg" alt="Language">
   &nbsp;
@@ -16,7 +16,7 @@
 
 ## English (brief)
 
-**why-ask-that** is a companion Claude Code skill to [remeet-me](https://github.com/T2lighter/remeet-me). During a self-interview, remeet-me silently logs every question it asks — the exact wording, what triggered it, the technique used, the goal, the alternative it rejected, and how you responded. why-ask-that turns that log into a **learnable archive of questioning craft**:
+**why-ask-that** is a companion skill to [remeet-me](https://github.com/T2lighter/remeet-me), following the Agent Skills Standard — it runs in any skills-compatible runtime. During a self-interview, remeet-me silently logs every question it asks — the exact wording, what triggered it, the technique used, the goal, the alternative it rejected, and how you responded. why-ask-that turns that log into a **learnable archive of questioning craft**:
 
 - Per-question "why" cards: context / trigger / technique / purpose / discarded alternative / **effect** (did it open you up, or hit a wall — judged honestly, no sugar-coating)
 - **Transferable principles**: one-line questioning rules that still hold with a different person and a different topic
@@ -82,17 +82,21 @@ remeet-me/why-ask-that/
 
 ## 安装
 
-```bash
-# 先装 remeet-me（必需）
-git clone https://github.com/T2lighter/remeet-me.git ~/.claude/skills/remeet-me
-# Windows (PowerShell)
-git clone https://github.com/T2lighter/remeet-me.git "$env:USERPROFILE\.claude\skills\remeet-me"
+先装 remeet-me（必需），再装 why-ask-that——把两个仓库 clone 到你的 agent skills 目录：
 
-# 再装 why-ask-that
-git clone https://github.com/T2lighter/why-ask-that.git ~/.claude/skills/why-ask-that
-# Windows (PowerShell)
-git clone https://github.com/T2lighter/why-ask-that.git "$env:USERPROFILE\.claude\skills\why-ask-that"
+```bash
+git clone https://github.com/T2lighter/remeet-me.git <skills目录>/remeet-me
+git clone https://github.com/T2lighter/why-ask-that.git <skills目录>/why-ask-that
 ```
+
+各 runtime 的 skills 目录（`~` 在 Windows 即 `%USERPROFILE%`）：
+
+| Runtime | Skills 目录 |
+|---|---|
+| Claude Code | `~/.claude/skills/` |
+| Codex | `~/.codex/skills/` |
+| Cursor | `~/.cursor/skills/` |
+| 其他 skills-compatible runtime | 见各自文档，装法相同 |
 
 装好后正常用 remeet-me 采访即可，日志默认开启。访谈结束后问一句"为什么这么问"，或对它"要不要跑一份提问分析"的提议说"好，跑吧"，本技能自动触发。
 
