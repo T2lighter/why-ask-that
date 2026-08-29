@@ -53,7 +53,7 @@ description: 使用本 skill 的时机：用户关注的对象是 remeet-me 自�
 
 **🔴 CHECKPOINT（落盘前必停）：完整分析会新建 2 个文件、更新 index.md——写之前先向用户报清单（主档与 html 的文件名、index.md 将追加的原则条目），用户点头再动笔。index.md 是跨周期累积的原则库，宁慢勿污。快速分析不落盘，无此步。**
 
-### md 主档：`remeet-me/why-ask-that/日期-主题-analysis.md`
+### md 主档：`why-ask-that/日期-主题-analysis.md`（独立目录，与 `remeet-me/` 平级）
 
 ```markdown
 # 《[主题]提问分析》
@@ -78,9 +78,9 @@ N 问；五类分布、透镜分布、五层层级分布（三张小表）；
 - 问题时间线（横轴=提问顺序，色块=五种类型）+ 每问一张"为什么"卡片 + 分布统计 + 模式观察 + 练习
 - **零外部依赖**：CSS 内联，图表用内联 SVG 或纯 CSS 条形，不引 CDN、不引字体——保证离线双击可用、可直接分享
 
-### index.md：`remeet-me/why-ask-that/index.md`（跨会话/跨周期积累）
+### index.md：`why-ask-that/index.md`（跨会话/跨周期积累）
 
-当前区没有 `why-ask-that/` 时（比如直接分析归档快照、没解档）：先看归档链上最近一份 index，有则复制过来当底本，没有才新建——**不重开一摊**。
+`why-ask-that/` 是独立目录（与 `remeet-me/` 平级）：remeet-me 的归档、清空、丢弃都不碰它。index 是唯一活库，原地更新——不存在继承、搬家或重开一摊。
 
 每次完整分析后**更新**（不是覆盖）：
 
